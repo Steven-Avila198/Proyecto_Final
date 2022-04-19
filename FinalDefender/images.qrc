@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Sprites Personajes/asteroide.png</file>
+        <file>Sprites Personajes/BasuraEspacial.png</file>
+        <file>Sprites Personajes/circuito.png</file>
+        <file>Sprites Personajes/disparo.png</file>
+        <file>Sprites Personajes/Galaxia.jpg</file>
+        <file>Sprites Personajes/imagenes.rar</file>
+        <file>Sprites Personajes/nave.png</file>
+    </qresource>
+</RCC>
