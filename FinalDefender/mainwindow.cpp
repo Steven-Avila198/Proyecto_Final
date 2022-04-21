@@ -42,7 +42,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //Nivel 1 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-    level1 = Niveles.at(0)->addRect(0,0,80,80, QPen(QColor(1,1,1)), QImage("../TheSpaceBattle/App/Sprites Personajes/Circuito.jpg"));
+    level1 = Niveles.at(0)->addRect(0,0,80,80, QPen(QColor(1,1,1)), QImage("../FinalDefender/Sprites Personajes/Galaxia.jpg"));
     Niveles.at(0)->addItem(astronauta);
     Niveles.at(0)->addItem(BasuraEspacial);
     BasuraEspacial->posx = 400;

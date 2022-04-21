@@ -5,7 +5,10 @@
         <file>Sprites Personajes/circuito.png</file>
         <file>Sprites Personajes/disparo.png</file>
         <file>Sprites Personajes/Galaxia.jpg</file>
-        <file>Sprites Personajes/imagenes.rar</file>
         <file>Sprites Personajes/nave.png</file>
+        <file>Sprites Personajes/Boss.png</file>
+        <file>Sprites Personajes/Miniboss.png</file>
+        <file>Sprites Personajes/Player1.png</file>
+        <file>Sprites Personajes/Player2.png</file>
     </qresource>
 </RCC>

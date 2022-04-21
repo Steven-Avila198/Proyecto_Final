@@ -153,10 +153,13 @@ compiler_rcc_clean:
 debug/qrc_images.cpp: ../FinalDefender/images.qrc \
 		C:/Qt/5.15.0/mingw81_64/bin/rcc.exe \
 		../FinalDefender/Sprites\ Personajes/disparo.png \
+		../FinalDefender/Sprites\ Personajes/Boss.png \
+		../FinalDefender/Sprites\ Personajes/Player2.png \
 		../FinalDefender/Sprites\ Personajes/Galaxia.jpg \
-		../FinalDefender/Sprites\ Personajes/imagenes.rar \
 		../FinalDefender/Sprites\ Personajes/nave.png \
 		../FinalDefender/Sprites\ Personajes/asteroide.png \
+		../FinalDefender/Sprites\ Personajes/Player1.png \
+		../FinalDefender/Sprites\ Personajes/Miniboss.png \
 		../FinalDefender/Sprites\ Personajes/BasuraEspacial.png \
 		../FinalDefender/Sprites\ Personajes/circuito.png
 	C:\Qt\5.15.0\mingw81_64\bin\rcc.exe -name images ..\FinalDefender\images.qrc -o debug\qrc_images.cpp
@@ -825,6 +828,8 @@ debug/moc_mainwindow.cpp: ../FinalDefender/mainwindow.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtGui/qpainterpath.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtCore/QRectF \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QDesktopWidget \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtCore/QDebug \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QGraphicsRectItem \
 		C:/Qt/5.15.0/mingw81_64/include/QtGui/QKeyEvent \
@@ -1853,6 +1858,8 @@ debug/main.o: ../FinalDefender/main.cpp ../FinalDefender/mainwindow.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtGui/qpainterpath.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtCore/QRectF \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QDesktopWidget \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtCore/QDebug \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QGraphicsRectItem \
 		C:/Qt/5.15.0/mingw81_64/include/QtGui/QKeyEvent \
@@ -1877,7 +1884,6 @@ debug/main.o: ../FinalDefender/main.cpp ../FinalDefender/mainwindow.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qapplication.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtCore/qcoreapplication.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtCore/qeventloop.h \
-		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtGui/qguiapplication.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\FinalDefender\main.cpp
@@ -2002,6 +2008,8 @@ debug/mainwindow.o: ../FinalDefender/mainwindow.cpp ../FinalDefender/mainwindow.
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qgraphicsitem.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtGui/qpainterpath.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtCore/QRectF \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QDesktopWidget \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtCore/QDebug \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QGraphicsRectItem \
 		C:/Qt/5.15.0/mingw81_64/include/QtGui/QKeyEvent \
@@ -2022,7 +2030,36 @@ debug/mainwindow.o: ../FinalDefender/mainwindow.cpp ../FinalDefender/mainwindow.
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QMessageBox \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdialog.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtCore/QVariant \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QApplication \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qapplication.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtCore/qeventloop.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtGui/qguiapplication.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtGui/qinputmethod.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QGraphicsView \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qgraphicsview.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qscrollarea.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QGridLayout \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayout.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLCDNumber \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLabel \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlabel.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QMenuBar \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmenu.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qaction.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QStatusBar \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\FinalDefender\mainwindow.cpp
 
 debug/menuinicial.o: ../FinalDefender/menuinicial.cpp ../FinalDefender/menuinicial.h \
@@ -2139,7 +2176,44 @@ debug/menuinicial.o: ../FinalDefender/menuinicial.cpp ../FinalDefender/menuinici
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QMessageBox \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdialog.h \
-		ui_menuinicial.h
+		ui_menuinicial.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtCore/QVariant \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QApplication \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qapplication.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtCore/qeventloop.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdesktopwidget.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtGui/qguiapplication.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtGui/qinputmethod.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QGraphicsView \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qgraphicsview.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtGui/qpainter.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtGui/qtextoption.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qscrollarea.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLabel \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlabel.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLineEdit \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlineedit.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtGui/qtextcursor.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtGui/qtextformat.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QMenuBar \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmenubar.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmenu.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qaction.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qactiongroup.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QPushButton \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QStatusBar \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstatusbar.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QVBoxLayout \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qboxlayout.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayout.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayoutitem.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/5.15.0/mingw81_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\menuinicial.o ..\FinalDefender\menuinicial.cpp
 
 debug/miniboss.o: ../FinalDefender/miniboss.cpp ../FinalDefender/miniboss.h \
