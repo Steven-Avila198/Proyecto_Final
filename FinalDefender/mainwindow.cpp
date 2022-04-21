@@ -391,7 +391,7 @@ void MainWindow::GameOver()
     }
     if(naves.at(0)->vidas == 0){
         if(reiniciar == 0){
-          //agregar imagen de gameover   Escenas.at(3)->setBackgroundBrush(QImage("../TheSpaceBattle/App/Sprites Personajes/GAME OVER.png"));
+          //agregar imagen de gameover   Escenas.at(3)->setBackgroundBrush(QImage("../"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -417,7 +417,7 @@ void MainWindow::GameOver()
     }
     if(naves.at(1)->vidas == 0){
         if(reiniciar == 0){
-       //agregar imagen de gameover      Escenas.at(3)->setBackgroundBrush(QImage("../TheSpaceBattle/App/Sprites Personajes/GAME OVER.png"));
+       //agregar imagen de gameover      Escenas.at(3)->setBackgroundBrush(QImage("../"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -521,7 +521,7 @@ void MainWindow::GameOverMulti()
 {
     if(fin == 1 and progreso == 0 and nivel == 1){
         if(reiniciar == 0){
-        //agregar imagen de gameover     Escenas.at(3)->setBackgroundBrush(QImage("../TheSpaceBattle/App/Sprites Personajes/GAME OVER.png"));
+        //agregar imagen de gameover     Escenas.at(3)->setBackgroundBrush(QImage("../"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -544,7 +544,7 @@ void MainWindow::GameOverMulti()
     }
     if(fin == 1 and progreso == 0 and nivel == 2){
         if(reiniciar == 0){
-        //agregar imagen de gameover     Escenas.at(3)->setBackgroundBrush(QImage("../TheSpaceBattle/App/Sprites Personajes/GAME OVER.png"));
+        //agregar imagen de gameover     Escenas.at(3)->setBackgroundBrush(QImage("../"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -575,7 +575,7 @@ void MainWindow::GameOverMulti()
     }
     if(fin == 1 and progreso <= 1 and nivel == 3){
         if(reiniciar == 0){
-        //agregar imagen de gameover     Escenas.at(3)->setBackgroundBrush(QImage("../TheSpaceBattle/App/Sprites Personajes/GAME OVER.png"));
+        //agregar imagen de gameover     Escenas.at(3)->setBackgroundBrush(QImage("../"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -673,7 +673,7 @@ void MainWindow::conector()
         }
         if(seconds >= 11500 and nivel == 0){
             fin = 0;
-            Escenas.at(1)->setBackgroundBrush(QImage("../TheSpaceBattle/App/Sprites Personajes/Nivel 1.png"));
+          //agregar titulo del nivel  Escenas.at(1)->setBackgroundBrush(QImage("../"));
             ui->graphicsView->setScene(Escenas.at(1));
             ui->graphicsView->show();
         }
@@ -700,7 +700,7 @@ void MainWindow::conector()
             else{
                 if(astronauta->vidas == 0 and turno == 3 and progreso >= 1){
                     cambio = 0;
-                    Escenas.at(2)->setBackgroundBrush(QImage("../TheSpaceBattle/App/Sprites Personajes/Nivel 2.png"));
+                   //agregar titulo del nivel Escenas.at(2)->setBackgroundBrush(QImage("../"));
                     ui->graphicsView->setScene(Escenas.at(2));
                     ui->graphicsView->show();
                 }
@@ -991,7 +991,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::Escritura()
+/*void MainWindow::Escritura()
 {
     string prueba;
 
@@ -999,7 +999,7 @@ void MainWindow::Escritura()
 
     ofstream archivo;
 
-    archivo.open("../TheSpaceBattle/App/BaseDatos.txt");
+    archivo.open("../FinalDefender/BaseDatos.txt");
     if(!archivo.is_open()){
         cout << "El archivo " << "BaseDatos.txt" << " no pudo ser abierto" << endl;
         exit(1);
@@ -1017,7 +1017,7 @@ void MainWindow::Lectura(string &texto)
 
     ifstream archivo;
 
-    archivo.open("../TheSpaceBattle/App/BaseDatos.txt");
+    archivo.open("../FinalDefender/BaseDatos.txt");
 
     if(!archivo.is_open()){
         cout << "El archivo " << "BaseDatos.txt" << " no pudo ser abierto" << endl;
@@ -1060,7 +1060,7 @@ void MainWindow::Lectura(string &texto)
         }
     }
     archivo.close();
-}
+}*/
 
 void MainWindow::keyPressEvent(QKeyEvent *e)
 {

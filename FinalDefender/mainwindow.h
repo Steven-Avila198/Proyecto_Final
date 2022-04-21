@@ -25,7 +25,7 @@
 #include "boss.h"
 #include "miniboss.h"
 #include "disparo.h"
-//#include "intro.h"
+#include "intro.h"
 #include "basura.h"
 #include "menuinicial.h"
 
