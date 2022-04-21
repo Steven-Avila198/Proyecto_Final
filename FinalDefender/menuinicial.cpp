@@ -11,8 +11,6 @@ MenuInicial::MenuInicial(QWidget *parent) :
     ui->atras->hide();
     ui->contrasena->hide();
     ui->nombre->hide();
-    ui->label->hide();
-    ui->label_2->hide();
     ui->Continuar->hide();
     ui->graphicsView->hide();
 }
@@ -123,8 +121,6 @@ void MenuInicial::on_Solitario_clicked()
     ui->atras->show();
     ui->contrasena->show();
     ui->nombre->show();
-    ui->label->show();
-    ui->label_2->show();
     ui->Continuar->show();
 }
 
@@ -163,8 +159,6 @@ void MenuInicial::on_atras_clicked()
     ui->atras->hide();
     ui->contrasena->hide();
     ui->nombre->hide();
-    ui->label->hide();
-    ui->label_2->hide();
     ui->Continuar->hide();
     ui->nombre->clear();
     ui->contrasena->clear();
@@ -182,8 +176,6 @@ void MenuInicial::on_Multijugador_clicked()
     ui->atras->show();
     ui->contrasena->show();
     ui->nombre->show();
-    ui->label->show();
-    ui->label_2->show();
     ui->Continuar->show();
     multi = 1;
     modo = 1;
@@ -194,8 +186,6 @@ void MenuInicial::on_CargarPartida_clicked()
     ui->atras->show();
     ui->contrasena->show();
     ui->nombre->show();
-    ui->label->show();
-    ui->label_2->show();
     ui->Continuar->show();
     modo = 2;
 }
@@ -213,8 +203,6 @@ void MenuInicial::on_Instrucciones_clicked()
     ui->Multijugador->hide();
     ui->Solitario->hide();
     ui->contrasena->hide();
-    ui->label->hide();
-    ui->label_2->hide();
     ui->label_3->hide();
 
 }

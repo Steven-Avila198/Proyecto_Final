@@ -25,16 +25,19 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(85, 255, 255);</string>
+   <string notr="true">background-color: rgb(61, 0, 153);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
+      <x>140</x>
       <y>200</y>
-      <width>271</width>
+      <width>500</width>
       <height>171</height>
      </rect>
     </property>
@@ -42,27 +45,30 @@
      <item>
       <widget class="QPushButton" name="Solitario">
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;8514oem&quot;;</string>
+        <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Fixedsys&quot;;</string>
        </property>
        <property name="text">
-        <string>SOLITARIO</string>
+        <string>UN SOLO JUGADOR</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="Multijugador">
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;8514oem&quot;;</string>
+        <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Fixedsys&quot;;</string>
        </property>
        <property name="text">
-        <string>MULTIJUGADOR</string>
+        <string>DOS JUGADORES</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="CargarPartida">
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;8514oem&quot;;</string>
+        <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Fixedsys&quot;;</string>
        </property>
        <property name="text">
         <string>CARGAR PARTIDA</string>
@@ -72,7 +78,8 @@
      <item>
       <widget class="QPushButton" name="Instrucciones">
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;8514oem&quot;;</string>
+        <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Fixedsys&quot;;</string>
        </property>
        <property name="text">
         <string>INSTRUCCIONES</string>
@@ -84,55 +91,58 @@
    <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>200</y>
+      <x>280</x>
+      <y>390</y>
       <width>212</width>
-      <height>107</height>
+      <height>108</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
      <item>
-      <widget class="QLabel" name="label">
-       <property name="whatsThis">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
+      <widget class="QLineEdit" name="nombre">
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;8514oem&quot;;</string>
+        <string notr="true">font: 700 9pt &quot;Fixedsys&quot;;
+background-color: rgba(103, 52, 213, 100);</string>
        </property>
        <property name="text">
-        <string>       NOMBRE</string>
+        <string>NOMBRE</string>
+       </property>
+       <property name="maxLength">
+        <number>20</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="nombre"/>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLineEdit" name="contrasena">
        <property name="styleSheet">
-        <string notr="true">font: 75 12pt &quot;8514oem&quot;;</string>
+        <string notr="true">font: 700 9pt &quot;Fixedsys&quot;;
+background-color: rgba(103, 52, 213, 100);</string>
        </property>
        <property name="text">
-        <string>     CONTRASENA</string>
+        <string>CONTRASEÑA</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="contrasena"/>
      </item>
     </layout>
    </widget>
    <widget class="QPushButton" name="Continuar">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>440</y>
+      <x>280</x>
+      <y>520</y>
       <width>101</width>
       <height>28</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 12pt &quot;8514oem&quot;;</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Fixedsys&quot;;</string>
     </property>
     <property name="text">
      <string>CONTINUAR</string>
@@ -141,14 +151,15 @@
    <widget class="QPushButton" name="atras">
     <property name="geometry">
      <rect>
-      <x>620</x>
-      <y>440</y>
+      <x>400</x>
+      <y>520</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 12pt &quot;8514oem&quot;;</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 12pt &quot;Fixedsys&quot;;</string>
     </property>
     <property name="text">
      <string>VOLVER</string>
@@ -157,38 +168,40 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>90</y>
+      <x>110</x>
+      <y>80</y>
       <width>631</width>
       <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 48pt &quot;Bauhaus 93&quot;;</string>
+     <string notr="true">color: rgb(255, 255, 255);
+border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(100, 154, 255, 255), stop:1 rgba(255, 255, 255, 255));
+font: 700 48pt &quot;Sitka Text&quot;;</string>
     </property>
     <property name="text">
-     <string>THE SPACE BATTLE</string>
+     <string>FINAL DEFENDER</string>
     </property>
    </widget>
    <widget class="QGraphicsView" name="graphicsView">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>600</width>
-      <height>600</height>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>800</height>
      </rect>
     </property>
     <property name="minimumSize">
      <size>
-      <width>600</width>
-      <height>600</height>
+      <width>800</width>
+      <height>800</height>
      </size>
     </property>
     <property name="maximumSize">
      <size>
-      <width>600</width>
-      <height>600</height>
+      <width>800</width>
+      <height>800</height>
      </size>
     </property>
    </widget>
@@ -199,7 +212,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
