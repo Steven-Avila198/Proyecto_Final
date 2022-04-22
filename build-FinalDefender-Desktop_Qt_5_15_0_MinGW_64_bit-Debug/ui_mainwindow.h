@@ -27,10 +27,11 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QGridLayout *gridLayout;
+    QGraphicsView *graphicsView;
     QLCDNumber *lcdNumber;
     QLabel *label;
-    QGraphicsView *graphicsView;
     QLCDNumber *lcdNumber_2;
+    QLabel *label_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -45,6 +46,13 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout = new QGridLayout(centralwidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        graphicsView = new QGraphicsView(centralwidget);
+        graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
+        graphicsView->setMinimumSize(QSize(800, 800));
+        graphicsView->setMaximumSize(QSize(800, 800));
+
+        gridLayout->addWidget(graphicsView, 1, 0, 1, 1);
+
         lcdNumber = new QLCDNumber(centralwidget);
         lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
         lcdNumber->setMinimumSize(QSize(100, 30));
@@ -52,23 +60,18 @@ public:
         lcdNumber->setStyleSheet(QString::fromUtf8("font: 75 12pt \"8514oem\";\n"
 "background-color: rgb(184, 184, 184);"));
 
-        gridLayout->addWidget(lcdNumber, 0, 3, 1, 1);
+        gridLayout->addWidget(lcdNumber, 0, 6, 1, 1);
 
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setMinimumSize(QSize(60, 30));
         label->setMaximumSize(QSize(60, 30));
-        label->setStyleSheet(QString::fromUtf8("font: 75 12pt \"8514oem\";\n"
-"background-color: rgb(184, 184, 184);"));
+        label->setStyleSheet(QString::fromUtf8("font: 700 9pt \"Fixedsys\";\n"
+"background-color: rgb(104, 184, 184);"));
+        label->setAlignment(Qt::AlignCenter);
+        label->setMargin(0);
 
-        gridLayout->addWidget(label, 0, 2, 1, 1);
-
-        graphicsView = new QGraphicsView(centralwidget);
-        graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
-        graphicsView->setMinimumSize(QSize(800, 800));
-        graphicsView->setMaximumSize(QSize(800, 800));
-
-        gridLayout->addWidget(graphicsView, 1, 0, 1, 1);
+        gridLayout->addWidget(label, 0, 3, 1, 1);
 
         lcdNumber_2 = new QLCDNumber(centralwidget);
         lcdNumber_2->setObjectName(QString::fromUtf8("lcdNumber_2"));
@@ -77,7 +80,16 @@ public:
         lcdNumber_2->setStyleSheet(QString::fromUtf8("font: 75 12pt \"8514oem\";\n"
 "background-color: rgb(184, 184, 184);"));
 
-        gridLayout->addWidget(lcdNumber_2, 0, 0, 1, 1);
+        gridLayout->addWidget(lcdNumber_2, 0, 2, 1, 1);
+
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setAutoFillBackground(false);
+        label_2->setStyleSheet(QString::fromUtf8("font: 700 9pt \"Fixedsys\";\n"
+"background-color: rgb(104, 184, 184);"));
+        label_2->setMargin(6);
+
+        gridLayout->addWidget(label_2, 0, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
@@ -97,6 +109,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "VIDAS", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "PUNTOS", nullptr));
     } // retranslateUi
 
 };

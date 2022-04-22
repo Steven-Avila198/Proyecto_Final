@@ -6,7 +6,7 @@ intro::intro(QObject *parent) : QObject(parent)
 
     filas = 0, columnas = 0;
 
-    pixmap = new QPixmap(":/Sprites Personajes/Intro.jpg");
+    pixmap = new QPixmap(":/Sprites Personajes/Intros.jpg");
 
     ancho = 800;
     alto = 800;
@@ -53,3 +53,5 @@ void intro::contador()
         titulo();
     }
 }
+
+

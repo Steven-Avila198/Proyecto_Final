@@ -10,7 +10,7 @@ personaje::personaje(int prueba, QObject *parent) : QObject(parent)
         pixmap = new QPixmap(":/Sprites Personajes/Player1_Mov.png");
     }
     else{
-        pixmap = new QPixmap(":/Sprites Personajes/nave V2.png");
+        pixmap = new QPixmap(":/Sprites Personajes/Nave1.png");
     }
 
 

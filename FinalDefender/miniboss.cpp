@@ -6,7 +6,7 @@ miniboss::miniboss(QObject *parent) : QObject(parent)
 
     filas = 0, columnas = 0;
 
-    pixmap = new QPixmap(":/Sprites Personajes/Miniboss");
+    pixmap = new QPixmap(":/Sprites Personajes/Boss-11.png");
 
     ancho = 54;
     alto = 54;

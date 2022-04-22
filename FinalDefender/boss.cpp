@@ -6,7 +6,7 @@ Boss::Boss(QObject *parent) : QObject(parent)
 
     filas = 0, columnas = 0;
 
-    pixmap = new QPixmap(":/Sprites Personajes/Boss.png");
+    pixmap = new QPixmap(":/Sprites Personajes/Bossi.png");
 
     ancho = 300;
     alto = 300;

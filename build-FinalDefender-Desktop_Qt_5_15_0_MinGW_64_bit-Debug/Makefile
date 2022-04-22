@@ -271,7 +271,7 @@ Makefile: ../FinalDefender/FinalDefender.pro C:/Qt/5.15.0/mingw81_64/mkspecs/win
 		C:/Qt/5.15.0/mingw81_64/lib/Qt5Core.prl \
 		C:/Qt/5.15.0/mingw81_64/lib/qtmain.prl \
 		C:/Qt/5.15.0/mingw81_64/mkspecs/features/build_pass.prf \
-		../FinalDefender/images.qrc
+		../FinalDefender/Images.qrc
 	$(QMAKE) -o Makefile ..\FinalDefender\FinalDefender.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Qt/5.15.0/mingw81_64/mkspecs/features/spec_pre.prf:
 C:/Qt/5.15.0/mingw81_64/mkspecs/qdevice.pri:
@@ -474,7 +474,7 @@ C:/Qt/5.15.0/mingw81_64/lib/Qt5Gui.prl:
 C:/Qt/5.15.0/mingw81_64/lib/Qt5Core.prl:
 C:/Qt/5.15.0/mingw81_64/lib/qtmain.prl:
 C:/Qt/5.15.0/mingw81_64/mkspecs/features/build_pass.prf:
-../FinalDefender/images.qrc:
+../FinalDefender/Images.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\FinalDefender\FinalDefender.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 

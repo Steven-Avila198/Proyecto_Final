@@ -1,26 +1,24 @@
 <RCC>
     <qresource prefix="/">
-        <file>Sprites Personajes/asteroide.png</file>
-        <file>Sprites Personajes/BasuraEspacial.png</file>
-        <file>Sprites Personajes/circuito.png</file>
-        <file>Sprites Personajes/disparo.png</file>
-        <file>Sprites Personajes/nave.png</file>
-        <file>Sprites Personajes/Boss.png</file>
-        <file>Sprites Personajes/Miniboss.png</file>
-        <file>Sprites Personajes/Player2.png</file>
-        <file>Sprites Personajes/game over.png</file>
-        <file>Sprites Personajes/Intro.jpg</file>
         <file>Sprites Personajes/Player1_Mov.png</file>
+        <file>Sprites Personajes/Nave1.png</file>
         <file>Sprites Personajes/Laser.png</file>
-        <file>Sprites Personajes/nave V2.png</file>
-        <file>Sprites Personajes/Final.png</file>
-        <file>Sprites Personajes/JUGADOR1.png</file>
-        <file>Sprites Personajes/JUGADOR2.png</file>
-        <file>Sprites Personajes/NIVEL 1.png</file>
-        <file>Sprites Personajes/NIVEL 2.png</file>
-        <file>Sprites Personajes/NIVEL 3.png</file>
-        <file>Sprites Personajes/Circuitos.jpg</file>
+        <file>Sprites Personajes/Bossi.png</file>
+        <file>Sprites Personajes/Boss-11.png</file>
+        <file>Sprites Personajes/disparo.png</file>
+        <file>Sprites Personajes/BasuraEspacial.png</file>
         <file>Sprites Personajes/Galaxia.jpg</file>
-        <file>Sprites Personajes/Cometas.jpg</file>
+        <file>Sprites Personajes/Circuito.png</file>
+        <file>Sprites Personajes/JUGADOR1.png</file>
+        <file>Sprites Personajes/Nivel1.png</file>
+        <file>Sprites Personajes/NIVEL 2.png</file>
+        <file>Sprites Personajes/JUGADOR2.png</file>
+        <file>Sprites Personajes/GAME OVER.png</file>
+        <file>Sprites Personajes/Met.png</file>
+        <file>Sprites Personajes/Com.png</file>
+        <file>Sprites Personajes/Final.png</file>
+        <file>Sprites Personajes/NIVEL 3.png</file>
+        <file>Sprites Personajes/Intros.jpg</file>
+        <file>Sprites Personajes/Instrucciones.jpg</file>
     </qresource>
 </RCC>

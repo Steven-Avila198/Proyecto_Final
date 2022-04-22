@@ -41,4 +41,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    images.qrc
+    Images.qrc
+
+DISTFILES += \
+    Sprites Personajes/BasuraEspacial.png \
+    Sprites Personajes/Intro.jpg \
+    Sprites Personajes/Player1_Mov.png

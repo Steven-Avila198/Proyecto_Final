@@ -20,13 +20,13 @@ MenuInicial::~MenuInicial()
     delete ui;
 }
 
-/*void MenuInicial::Escritura(string &texto)
+void MenuInicial::Escritura(string &texto)
 {
    Lectura(texto);
 
    ofstream archivo;
 
-   archivo.open("../TheSpaceBattle/App/BaseDatos.txt");
+   archivo.open("..FinalDefender/BaseDatos.txt");
    if(!archivo.is_open()){
        cout << "El archivo " << "BaseDatos.txt" << " no pudo ser abierto1" << endl;
        exit(1);
@@ -53,7 +53,7 @@ void MenuInicial::Lectura(string &texto)
 
     ifstream archivo;
 
-    archivo.open("../TheSpaceBattle/App/BaseDatos.txt");
+    archivo.open("..FinalDefender/BaseDatos.txt");
 
     if(!archivo.is_open()){
         cout << "El archivo " << "BaseDatos.txt" << " no pudo ser abierto" << endl;
@@ -114,7 +114,7 @@ void MenuInicial::Lectura(string &texto)
         }
         }
     archivo.close();
-}*/
+}
 
 void MenuInicial::on_Solitario_clicked()
 {
@@ -192,7 +192,7 @@ void MenuInicial::on_CargarPartida_clicked()
 
 void MenuInicial::on_Instrucciones_clicked()
 {
-    instrucciones->setBackgroundBrush(QImage("../"));//Imagen de los controles
+    instrucciones->setBackgroundBrush(QImage(":/Sprites Personajes/Instrucciones.jpg"));
     ui->graphicsView->setScene(instrucciones);
     ui->graphicsView->setSceneRect(300,300,1,1);
     ui->graphicsView->show();

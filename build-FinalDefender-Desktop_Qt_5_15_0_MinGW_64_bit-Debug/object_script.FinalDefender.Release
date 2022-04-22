@@ -8,7 +8,7 @@ release/mainwindow.o
 release/menuinicial.o
 release/miniboss.o
 release/personaje.o
-release/qrc_images.o
+release/qrc_Images.o
 release/moc_basura.o
 release/moc_boss.o
 release/moc_disparo.o

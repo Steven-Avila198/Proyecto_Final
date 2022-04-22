@@ -9,7 +9,7 @@
 #include <QPainter>
 #include <QGraphicsItem>
 #include <QRectF>
-#include <QDesktopWidget>
+//#include <QDesktopWidget>
 #include <QDebug>
 #include <vector>
 #include <list>
