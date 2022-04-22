@@ -155,13 +155,17 @@ debug/qrc_images.cpp: ../FinalDefender/images.qrc \
 		../FinalDefender/Sprites\ Personajes/disparo.png \
 		../FinalDefender/Sprites\ Personajes/Boss.png \
 		../FinalDefender/Sprites\ Personajes/Player2.png \
-		../FinalDefender/Sprites\ Personajes/Galaxia.jpg \
+		../FinalDefender/Sprites\ Personajes/game\ over.png \
+		../FinalDefender/Sprites\ Personajes/Intro.jpg \
 		../FinalDefender/Sprites\ Personajes/nave.png \
 		../FinalDefender/Sprites\ Personajes/asteroide.png \
-		../FinalDefender/Sprites\ Personajes/Player1.png \
+		../FinalDefender/Sprites\ Personajes/Player1_Mov.png \
+		../FinalDefender/Sprites\ Personajes/Galaxia.jpeg \
 		../FinalDefender/Sprites\ Personajes/Miniboss.png \
 		../FinalDefender/Sprites\ Personajes/BasuraEspacial.png \
-		../FinalDefender/Sprites\ Personajes/circuito.png
+		../FinalDefender/Sprites\ Personajes/circuito.png \
+		../FinalDefender/Sprites\ Personajes/nave\ V2.png \
+		../FinalDefender/Sprites\ Personajes/Laser.png
 	C:\Qt\5.15.0\mingw81_64\bin\rcc.exe -name images ..\FinalDefender\images.qrc -o debug\qrc_images.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h

@@ -6,7 +6,7 @@ Laser::Laser(QObject *parent) : QObject(parent)
 
     filas = 0, columnas = 0;
 
-    //pixmap = new QPixmap(":/agregar sprite");
+    pixmap = new QPixmap(":/Sprites Personajes/Laser.png");
 
     ancho = 470;
     alto = 125;

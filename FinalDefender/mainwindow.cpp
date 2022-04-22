@@ -42,7 +42,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //Nivel 1 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-    level1 = Niveles.at(0)->addRect(0,0,80,80, QPen(QColor(1,1,1)), QImage("../FinalDefender/Sprites Personajes/Galaxia.jpg"));
+    level1 = Niveles.at(0)->addRect(0,0,80,80, QPen(QColor(1,1,1)), QImage(":/Sprites Personajes/Galaxia.jpg"));
     Niveles.at(0)->addItem(astronauta);
     Niveles.at(0)->addItem(BasuraEspacial);
     BasuraEspacial->posx = 400;
@@ -50,7 +50,7 @@ MainWindow::MainWindow(QWidget *parent)
     astronauta->setPos(400,400);
     astronauta->pos_x = 400;
     astronauta->pos_y = 400;
-    Niveles.at(0)->setBackgroundBrush(QImage("../FinalDefender/Sprites Personajes/Galaxia.jpg"));
+    Niveles.at(0)->setBackgroundBrush(QImage(":/Sprites Personajes/Galaxia.jpg"));
 
 
 
@@ -63,7 +63,7 @@ MainWindow::MainWindow(QWidget *parent)
     Niveles.at(1)->addItem(naves.at(0));
     Niveles.at(1)->addItem(shots[0]);
     shots[0]->setPos(-30,-30);
-    Niveles.at(1)->setBackgroundBrush(QImage("../FinalDefender/Sprites Personajes/Galaxia.jpg"));
+    Niveles.at(1)->setBackgroundBrush(QImage(":/Sprites Personajes/Galaxia.jpg"));
     naves.at(0)->setPos(55,400);
     naves.at(0)->pos_x = 55;
     naves.at(0)->pos_y = 400;
@@ -83,7 +83,7 @@ MainWindow::MainWindow(QWidget *parent)
     Niveles.at(2)->addItem(shots[1]);
     shots[1]->setPos(-30,-30);
     laser->setPos(0,-150);
-    Niveles.at(2)->setBackgroundBrush(QImage("../FinalDefender/Sprites Personajes/Galaxia.jpg"));
+    Niveles.at(2)->setBackgroundBrush(QImage(":/Sprites Personajes/Galaxia.jpg"));
     naves.at(1)->setPos(55,400);
     naves.at(1)->pos_x = 55;
     naves.at(1)->pos_y = 400;
@@ -119,14 +119,14 @@ void MainWindow::Level2(int a = 0)
     if(a == 0){
         indexm++;
         //se agrega los meteoritos y se usa addEllipse
-        meteoritos.at(indexm) = Niveles.at(1)->addEllipse(720,QRandomGenerator::global()->bounded(710),90,90, QPen(QColor(1,1,1)), QImage("../FinalDefender/Sprites Personajes/asteroide.jpg"));
+        meteoritos.at(indexm) = Niveles.at(1)->addEllipse(720,QRandomGenerator::global()->bounded(710),90,90, QPen(QColor(1,1,1)), QImage(":/Sprites Personajes/asteroide.jpg"));
 
         pruebam++;
     }
     else{
         indexc++;
         //se agrega los cometas y se usa addellipse
-        //falta sprite
+        //falta sprite de cometa
         cometas.at(indexc) = Niveles.at(1)->addEllipse(720,naves.at(0)->pos_y,45,45, QPen(QColor(1,1,1)), QImage("../"));
 
         pruebac++;
@@ -370,7 +370,7 @@ void MainWindow::GameOver()
 {
     if(astronauta->vidas == 0){
         if(reiniciar == 0){
-          //agregar imagen de gameover  Escenas.at(3)->setBackgroundBrush(QImage("../"));
+            Escenas.at(3)->setBackgroundBrush(QImage(":/Sprites Personajes/game over.png"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -391,7 +391,7 @@ void MainWindow::GameOver()
     }
     if(naves.at(0)->vidas == 0){
         if(reiniciar == 0){
-          //agregar imagen de gameover   Escenas.at(3)->setBackgroundBrush(QImage("../"));
+            Escenas.at(3)->setBackgroundBrush(QImage(":/Sprites Personajes/game over.png"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -417,7 +417,7 @@ void MainWindow::GameOver()
     }
     if(naves.at(1)->vidas == 0){
         if(reiniciar == 0){
-       //agregar imagen de gameover      Escenas.at(3)->setBackgroundBrush(QImage("../"));
+            Escenas.at(3)->setBackgroundBrush(QImage(":/Sprites Personajes/game over.png"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -521,7 +521,7 @@ void MainWindow::GameOverMulti()
 {
     if(fin == 1 and progreso == 0 and nivel == 1){
         if(reiniciar == 0){
-        //agregar imagen de gameover     Escenas.at(3)->setBackgroundBrush(QImage("../"));
+            Escenas.at(3)->setBackgroundBrush(QImage(":/Sprites Personajes/game over.png"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -544,7 +544,7 @@ void MainWindow::GameOverMulti()
     }
     if(fin == 1 and progreso == 0 and nivel == 2){
         if(reiniciar == 0){
-        //agregar imagen de gameover     Escenas.at(3)->setBackgroundBrush(QImage("../"));
+            Escenas.at(3)->setBackgroundBrush(QImage(":/Sprites Personajes/game over.png"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }
@@ -575,7 +575,7 @@ void MainWindow::GameOverMulti()
     }
     if(fin == 1 and progreso <= 1 and nivel == 3){
         if(reiniciar == 0){
-        //agregar imagen de gameover     Escenas.at(3)->setBackgroundBrush(QImage("../"));
+            Escenas.at(3)->setBackgroundBrush(QImage(":/Sprites Personajes/game over.png"));
             ui->graphicsView->setScene(Escenas.at(3));
             ui->graphicsView->show();
         }

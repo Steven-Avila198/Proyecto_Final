@@ -192,7 +192,7 @@ void MenuInicial::on_CargarPartida_clicked()
 
 void MenuInicial::on_Instrucciones_clicked()
 {
-    instrucciones->setBackgroundBrush(QImage("../TheSpaceBattle/App/Sprites Personajes/Instrucciones.png"));
+    instrucciones->setBackgroundBrush(QImage("../"));//Imagen de los controles
     ui->graphicsView->setScene(instrucciones);
     ui->graphicsView->setSceneRect(300,300,1,1);
     ui->graphicsView->show();

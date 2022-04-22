@@ -6,7 +6,7 @@ intro::intro(QObject *parent) : QObject(parent)
 
     filas = 0, columnas = 0;
 
-   //agregar sprite pixmap = new QPixmap(":/");
+    pixmap = new QPixmap(":/Sprites Personajes/Intro.jpg");
 
     ancho = 800;
     alto = 800;

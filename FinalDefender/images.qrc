@@ -4,11 +4,15 @@
         <file>Sprites Personajes/BasuraEspacial.png</file>
         <file>Sprites Personajes/circuito.png</file>
         <file>Sprites Personajes/disparo.png</file>
-        <file>Sprites Personajes/Galaxia.jpg</file>
         <file>Sprites Personajes/nave.png</file>
         <file>Sprites Personajes/Boss.png</file>
         <file>Sprites Personajes/Miniboss.png</file>
-        <file>Sprites Personajes/Player1.png</file>
         <file>Sprites Personajes/Player2.png</file>
+        <file>Sprites Personajes/game over.png</file>
+        <file>Sprites Personajes/Intro.jpg</file>
+        <file>Sprites Personajes/Player1_Mov.png</file>
+        <file>Sprites Personajes/Laser.png</file>
+        <file>Sprites Personajes/nave V2.png</file>
+        <file>Sprites Personajes/Galaxia.jpeg</file>
     </qresource>
 </RCC>
