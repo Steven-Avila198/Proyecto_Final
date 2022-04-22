@@ -15,10 +15,10 @@ MainWindow::MainWindow(QWidget *parent)
     jugador[1] = new QGraphicsScene;
     Final = new QGraphicsScene;
 
-    ////agregar sprite ////
-    Final->setBackgroundBrush(QImage("../"));
-    jugador[0]->setBackgroundBrush(QImage("../"));
-    jugador[1]->setBackgroundBrush(QImage("../"));
+    ////////////////////////
+    Final->setBackgroundBrush(QImage(":/Sprites Personajes/Final.png"));
+    jugador[0]->setBackgroundBrush(QImage(":/Sprites Personajes/JUGADOR1.png"));
+    jugador[1]->setBackgroundBrush(QImage(":/Sprites Personajes/JUGADOR2.png"));
     ////////////////////////
 
     for(int i = 0; i < 3; i++){
@@ -42,7 +42,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     //Nivel 1 //
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-    level1 = Niveles.at(0)->addRect(0,0,80,80, QPen(QColor(1,1,1)), QImage(":/Sprites Personajes/Galaxia.jpg"));
+    level1 = Niveles.at(0)->addRect(0,0,80,80, QPen(QColor(1,1,1)), QImage(":/Sprites Personajes/Circuitos.jpg"));
     Niveles.at(0)->addItem(astronauta);
     Niveles.at(0)->addItem(BasuraEspacial);
     BasuraEspacial->posx = 400;
@@ -119,15 +119,14 @@ void MainWindow::Level2(int a = 0)
     if(a == 0){
         indexm++;
         //se agrega los meteoritos y se usa addEllipse
-        meteoritos.at(indexm) = Niveles.at(1)->addEllipse(720,QRandomGenerator::global()->bounded(710),90,90, QPen(QColor(1,1,1)), QImage(":/Sprites Personajes/asteroide.jpg"));
+        meteoritos.at(indexm) = Niveles.at(1)->addEllipse(720,QRandomGenerator::global()->bounded(710),90,90, QPen(QColor(1,1,1)), QImage(":/Sprites Personajes/asteroide.png"));
 
         pruebam++;
     }
     else{
         indexc++;
         //se agrega los cometas y se usa addellipse
-        //falta sprite de cometa
-        cometas.at(indexc) = Niveles.at(1)->addEllipse(720,naves.at(0)->pos_y,45,45, QPen(QColor(1,1,1)), QImage("../"));
+        cometas.at(indexc) = Niveles.at(1)->addEllipse(720,naves.at(0)->pos_y,45,45, QPen(QColor(1,1,1)), QImage(":/Sprites Personajes/Cometas.jpg"));
 
         pruebac++;
     }
@@ -673,7 +672,7 @@ void MainWindow::conector()
         }
         if(seconds >= 11500 and nivel == 0){
             fin = 0;
-          //agregar titulo del nivel  Escenas.at(1)->setBackgroundBrush(QImage("../"));
+            Escenas.at(1)->setBackgroundBrush(QImage(":/Sprites Personajes/NIVEL 1.png"));
             ui->graphicsView->setScene(Escenas.at(1));
             ui->graphicsView->show();
         }
@@ -700,7 +699,7 @@ void MainWindow::conector()
             else{
                 if(astronauta->vidas == 0 and turno == 3 and progreso >= 1){
                     cambio = 0;
-                   //agregar titulo del nivel Escenas.at(2)->setBackgroundBrush(QImage("../"));
+                    Escenas.at(2)->setBackgroundBrush(QImage(":/Sprites Personajes/NIVEL 2.png"));
                     ui->graphicsView->setScene(Escenas.at(2));
                     ui->graphicsView->show();
                 }
@@ -760,7 +759,7 @@ void MainWindow::conector()
                 }
                 if(astronauta->puntos == 2000 and turno == 0){
                     cambio = 0;
-                 //falta sprite   Escenas.at(2)->setBackgroundBrush(QImage("../"));
+                    Escenas.at(2)->setBackgroundBrush(QImage(":/Sprites Personajes/NIVEL 2.png"));
                     ui->graphicsView->setScene(Escenas.at(2));
                     ui->graphicsView->show();
 
@@ -775,7 +774,7 @@ void MainWindow::conector()
                         progreso++;
                         if(progreso >= 1){
                             cambio = 0;
-                         //falta sprite   Escenas.at(2)->setBackgroundBrush(QImage("../"));
+                            Escenas.at(2)->setBackgroundBrush(QImage(":/Sprites Personajes/NIVEL 2.png"));
                             ui->graphicsView->setScene(Escenas.at(2));
                             ui->graphicsView->show();
                         }
@@ -798,7 +797,7 @@ void MainWindow::conector()
                     if(progreso >= 1){
                         nave_index = 1;
                         cambio = 0;
-                    //falta sprite    Escenas.at(3)->setBackgroundBrush(QImage("../"));
+                        Escenas.at(3)->setBackgroundBrush(QImage(":/Sprites Personajes/NIVEL 3.png"));
                         ui->graphicsView->setScene(Escenas.at(3));
                         ui->graphicsView->show();
                     }
@@ -838,7 +837,7 @@ void MainWindow::conector()
                 if(seconds >= 60500 and turno == 0){
                     nave_index = 1;
                     cambio = 0;
-                //falta sprite    Escenas.at(3)->setBackgroundBrush(QImage("../"));
+                    Escenas.at(3)->setBackgroundBrush(QImage(":/Sprites Personajes/NIVEL 3.png"));
                     ui->graphicsView->setScene(Escenas.at(3));
                     ui->graphicsView->show();
                 }

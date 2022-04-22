@@ -13,6 +13,14 @@
         <file>Sprites Personajes/Player1_Mov.png</file>
         <file>Sprites Personajes/Laser.png</file>
         <file>Sprites Personajes/nave V2.png</file>
-        <file>Sprites Personajes/Galaxia.jpeg</file>
+        <file>Sprites Personajes/Final.png</file>
+        <file>Sprites Personajes/JUGADOR1.png</file>
+        <file>Sprites Personajes/JUGADOR2.png</file>
+        <file>Sprites Personajes/NIVEL 1.png</file>
+        <file>Sprites Personajes/NIVEL 2.png</file>
+        <file>Sprites Personajes/NIVEL 3.png</file>
+        <file>Sprites Personajes/Circuitos.jpg</file>
+        <file>Sprites Personajes/Galaxia.jpg</file>
+        <file>Sprites Personajes/Cometas.jpg</file>
     </qresource>
 </RCC>
